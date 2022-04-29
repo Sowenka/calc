@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/* Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-------------------- */
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .header {
+    height: 100px;
+  }
+  section.credits {
+    width: 300px;
+    height: 160px;
+  }
+  input.credits__input-num {
+    font-size: 14px;
+  }
+  section.calculation {
+    width: 200px;
+    height: 160px;
+  }
+  button.calculation__result {
+    width: 120px;
+    padding: 5px;
+    margin-bottom: 3px;
+  }
+  button.calculation__clear-btn {
+    width: 120px;
+    padding: 5px;
+  }
+  section.payments {
+    width: 350px;
+    height: 160px;
+  }
+  input.payments__input-num {
+    font-size: 14px;
+  }
+  p.payments__title {
+    font-size: 14px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 100px;
+    width: 100%;
+  }
+  img.header__logo {
+    width: 150px;
+  }
+  h1.header__title {
+    font-size: 30px;
+  }
+  #top {
+    flex-direction: column;
+    padding: 5px;
+  }
+  section.credits {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  input.credits__input-num {
+    font-size: 32px;
+  }
+  section.calculation {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calculation__number {
+    display: flex;
+    flex-direction: column;
+  }
+  button.calculation__result {
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  button.calculation__clear-btn {
+    font-size: 18px;
+    padding: 10px;
+  }
+  p.calculation__summa {
+    font-size: 36px;
+  }
+  section.payments {
+    width: 100%;
+    height: 250px;
+  }
+  input.payments__input-num {
+    font-size: 32px;
+  }
+  p.payments__title {
+    font-size: 28px;
+  }
+  section.wage {
+    min-height: 394px;
+    width: 100%;
+    padding: 0 5px 5px 5px;
+  }
+  p.wage__title {
+    font-size: 36px;
+  }
+  p.wage__span {
+    font-size: 36px;
+  }
+  input.wage__input-num {
+    font-size: 32px;
+  }
+  button.wage__result {
+    height: 120px;
+    margin-top: 5px;
+    font-size: 32px;
+    width: 100%;
+  }
+  footer.footer {
+    min-height: 80px;
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 60px;
+    width: 100%;
+  }
+  img.header__logo {
+    width: 110px;
+  }
+  h1.header__title {
+    font-size: 18px;
+  }
+  #top {
+    flex-direction: column;
+    padding: 5px;
+  }
+  section.credits {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input.credits__input-num {
+    font-size: 20px;
+  }
+  section.calculation {
+    width: 100%;
+    height: 160px;
+  }
+  .calculation__number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button.calculation__result {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    padding: 2px;
+  }
+  button.calculation__clear-btn {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 12px;
+    padding: 2px;
+  }
+  p.calculation__summa {
+    font-size: 24px;
+  }
+  section.payments {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
+  input.payments__input-num {
+    font-size: 18px;
+  }
+  p.payments__title {
+    font-size: 18px;
+  }
+  section.wage {
+    width: 100%;
+    padding: 0 5px 5px 5px;
+  }
+  p.wage__title {
+    font-size: 24px;
+  }
+  p.wage__span {
+    font-size: 18px;
+  }
+  input.wage__input-num {
+    font-size: 14px;
+  }
+  button.wage__result {
+    font-size: 14px;
+    width: 100%;
+  }
+  footer.footer {
+    min-height: 30px;
+    width: 100%;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .header {
+    height: 40px;
+    width: 100%;
+  }
+  img.header__logo {
+    width: 60px;
+  }
+  h1.header__title {
+    font-size: 14px;
+  }
+  #top {
+    flex-direction: column;
+    padding: 5px;
+  }
+  section.credits {
+    width: 100%;
+    height: 160px;
+  }
+  input.credits__input-num {
+    font-size: 18px;
+  }
+  section.calculation {
+    width: 100%;
+    height: 160px;
+  }
+  .calculation__number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button.calculation__result {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    padding: 2px;
+  }
+  button.calculation__clear-btn {
+    width: 120px;
+    padding: 5px;
+    font-size: 12px;
+    padding: 2px;
+  }
+  p.calculation__summa {
+    font-size: 24px;
+  }
+  section.payments {
+    width: 100%;
+    height: 150px;
+  }
+  input.payments__input-num {
+    font-size: 12px;
+  }
+  p.payments__title {
+    font-size: 12px;
+  }
+  section.wage {
+    width: 100%;
+    padding: 0 5px 5px 5px;
+  }
+  p.wage__title {
+    font-size: 12px;
+  }
+  p.wage__span {
+    font-size: 12px;
+  }
+  input.wage__input-num {
+    font-size: 12px;
+  }
+  button.wage__result {
+    font-size: 14px;
+    width: 100%;
+  }
+  footer.footer {
+    min-height: 30px;
+    width: 100%;
+  }
+}
+
+/*==========  Mobile First  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* */
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+}
+
+input::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 20px 0 20px 0;
+}
+
+.header__title {
+  font-size: 30px;
+  color: #753f09;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.credits {
+  background: #aeffff;
+  padding: 20px;
+  width: 460px;
+}
+
+.credits__tinkoff {
+  display: flex;
+  align-items: center;
+}
+
+.credits__input-num {
+  font-size: 18px;
+  text-align: center;
+}
+
+.credits__logo-tinkoff {
+  padding: 0 0 5px 10px;
+}
+
+.credits__alfa {
+  display: flex;
+  align-items: center;
+}
+
+.credits__logo-alfa {
+  padding: 0 0 5px 10px;
+}
+
+.credits__rosbank {
+  display: flex;
+  align-items: center;
+}
+
+.credits__logo-rosbank {
+  padding: 0 0 0 10px;
+}
+
+.credits__input-num:focus {
+  box-shadow: 0 0 10px rgba(255, 130, 5, 0.6);
+  border-radius: 5px;
+}
+
+.payments__input-num:focus {
+  box-shadow: 0 0 10px rgba(255, 130, 5, 0.6);
+  border-radius: 5px;
+}
+
+.calculation {
+  background: #c7fcce;
+  padding: 45px;
+}
+
+.calculation__summa {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.calculation__result {
+  background: #753f09;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition-property: color, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.calculation__clear-btn {
+  background: #c57422;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition-property: color, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.calculation__result:hover,
+.calculation__result:focus {
+  color: #333;
+  background-color: #45d158;
+}
+
+.calculation__clear-btn:hover,
+.calculation__clear-btn:focus {
+  color: #333;
+  background-color: #7eec8d;
+}
+
+.wage__result:hover,
+.wage__result:focus {
+  color: #333;
+  background-color: #62f5f5;
+}
+
+.payments {
+  background: #ebc4fa;
+  padding: 11px;
+}
+
+.payments__flat {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.payments__input-num {
+  font-size: 18px;
+  text-align: center;
+}
+
+.payments__title {
+  font-size: 18px;
+  color: #753f09;
+  padding-left: 10px;
+}
+
+.payments__internet {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.payments__mobile {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.payments__petrol {
+  display: flex;
+  align-items: center;
+}
+
+.wage {
+  width: 550px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.wage__zarp {
+  display: flex;
+  font-size: 24px;
+  background: #aeffff;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  color: #753f09;
+}
+
+.wage__input-num {
+  font-size: 18px;
+  text-align: center;
+}
+
+.wage__title {
+  padding-right: 10px;
+}
+
+.wage__span {
+  background: #aeffff;
+  font-size: 24px;
+  padding: 20px;
+  color: #341d06;
+}
+
+.wage__result {
+  width: 550px;
+  background: #753f09;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  transition-property: color, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.wage__input-num:focus {
+  box-shadow: 0 0 10px rgba(255, 130, 5, 0.6);
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background: #e0e0e0;
+}

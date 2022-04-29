@@ -1,0 +1,262 @@
+@import "_nullstyle";
+@import "_adaptive";
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+body {
+    font-family: "Russo One", sans-serif;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 0.2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(224, 224, 224);
+    padding: 20px 0 20px 0;
+
+    &__logo {
+    }
+
+    &__title {
+        font-size: 30px;
+        color: rgb(117, 63, 9);
+    }
+}
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+
+    padding-bottom: 20px;
+}
+.credits {
+    background: rgb(174, 255, 255);
+    padding: 20px;
+    width: 460px;
+
+    &__tinkoff {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input-tinkoff {
+    }
+
+    &__input-num {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__logo-tinkoff {
+        padding: 0 0 5px 10px;
+    }
+
+    &__alfa {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input-alfa {
+    }
+
+    &__logo-alfa {
+        padding: 0 0 5px 10px;
+    }
+
+    &__rosbank {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input-rosbank {
+    }
+
+    &__logo-rosbank {
+        padding: 0 0 0 10px;
+    }
+}
+
+.credits__input-num:focus {
+    box-shadow: 0 0 10px rgba(255, 130, 5, 0.6);
+    border-radius: 5px;
+}
+
+.payments__input-num:focus {
+    box-shadow: 0 0 10px rgba(255, 130, 5, 0.6);
+    border-radius: 5px;
+}
+
+.calculation {
+    background: rgb(199, 252, 206);
+    padding: 45px;
+	
+
+    &__number {
+    }
+
+    &__summa {
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__result {
+        background: rgb(117, 63, 9);
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+
+		transition-property: color, background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+
+    &__clear-btn {
+        background: rgb(197, 116, 34);
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+		transition-property: color, background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+}
+
+.calculation__result:hover,
+.calculation__result:focus {
+	color:#333;
+	background-color: rgb(69, 209, 88);
+}
+
+.calculation__clear-btn:hover,
+.calculation__clear-btn:focus {
+	color:#333;
+	background-color: rgb(126, 236, 141);
+}
+
+.wage__result:hover,
+.wage__result:focus {
+	color:#333;
+	background-color: rgb(98, 245, 245);
+}
+
+
+.payments {
+    background: rgb(235, 196, 250);
+    padding: 11px;
+	
+
+    &__flat {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    &__input-flat {
+    }
+
+    &__input-num {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 18px;
+        color: rgb(117, 63, 9);
+        padding-left: 10px;
+    }
+
+    &__internet {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    &__input-internet {
+    }
+
+    &__mobile {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    &__input-mobile {
+    }
+
+    &__petrol {
+        display: flex;
+        align-items: center;
+
+        &__input-petrol {
+        }
+    }
+}
+
+.wage {
+    width: 550px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    &__zarp {
+        display: flex;
+        font-size: 24px;
+        background: rgb(174, 255, 255);
+
+        padding: 20px;
+        border-radius: 5px 5px 0 0;
+        color: rgb(117, 63, 9);
+    }
+
+    &__input-num {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__title {
+        padding-right: 10px;
+    }
+
+    &__span {
+        background: rgb(174, 255, 255);
+        font-size: 24px;
+        padding: 20px;
+        color: rgb(52, 29, 6);
+    }
+
+    &__result {
+        width: 550px;
+        background: rgb(117, 63, 9);
+        color: #fff;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        text-align: center;
+		transition-property: color, background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+}
+
+.wage__input-num:focus {
+    box-shadow: 0 0 10px rgba(255, 130, 5, 0.6);
+    border-radius: 5px;
+}
+
+.footer {
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background: rgb(224, 224, 224);
+
+    &__title {
+    }
+}

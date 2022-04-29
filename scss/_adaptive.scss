@@ -1,0 +1,353 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .header {
+        height: 100px;
+    }
+
+    section.credits {
+        width: 300px;
+        height: 160px;
+    }
+    input.credits__input-num {
+        font-size: 14px;
+    }
+
+    section.calculation {
+        width: 200px;
+        height: 160px;
+    }
+
+    button.calculation__result {
+        width: 120px;
+        padding: 5px;
+        margin-bottom: 3px;
+    }
+
+    button.calculation__clear-btn {
+        width: 120px;
+        padding: 5px;
+    }
+    section.payments {
+        width: 350px;
+        height: 160px;
+    }
+    input.payments__input-num {
+        font-size: 14px;
+    }
+    p.payments__title {
+        font-size: 14px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 100px;
+        width: 100%;
+    }
+    img.header__logo {
+        width: 150px;
+    }
+    h1.header__title {
+        font-size: 30px;
+    }
+
+    #top {
+        flex-direction: column;
+        padding: 5px;
+    }
+    section.credits {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    input.credits__input-num {
+        font-size: 32px;
+    }
+
+    section.calculation {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculation__number {
+        display: flex;
+        flex-direction: column;
+    }
+    button.calculation__result {
+        width: 120px;
+
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button.calculation__clear-btn {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    p.calculation__summa {
+        font-size: 36px;
+    }
+
+    section.payments {
+        width: 100%;
+        height: 250px;
+    }
+
+    input.payments__input-num {
+        font-size: 32px;
+    }
+    p.payments__title {
+        font-size: 28px;
+    }
+
+    section.wage {
+        min-height: 394px;
+        width: 100%;
+        padding: 0 5px 5px 5px;
+    }
+    p.wage__title {
+        font-size: 36px;
+    }
+
+    p.wage__span {
+        font-size: 36px;
+    }
+    input.wage__input-num {
+        font-size: 32px;
+    }
+
+    button.wage__result {
+        height: 120px;
+        margin-top: 5px;
+        font-size: 32px;
+        width: 100%;
+    }
+    footer.footer {
+        min-height: 80px;
+        width: 100%;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 60px;
+        width: 100%;
+    }
+    img.header__logo {
+        width: 110px;
+    }
+    h1.header__title {
+        font-size: 18px;
+    }
+
+    #top {
+        flex-direction: column;
+        padding: 5px;
+    }
+    section.credits {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input.credits__input-num {
+        font-size: 20px;
+    }
+
+    section.calculation {
+        width: 100%;
+        height: 160px;
+    }
+
+    .calculation__number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button.calculation__result {
+        width: 150px;
+		height: 50px;
+        padding: 10px;
+        margin-bottom: 3px;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    button.calculation__clear-btn {
+        width: 150px;
+		height: 50px;
+        padding: 10px;
+		font-size: 12px;
+        padding: 2px;
+    }
+
+    p.calculation__summa {
+        font-size: 24px;
+    }
+
+    
+    section.payments {
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+    }
+
+    input.payments__input-num {
+        font-size: 18px;
+    }
+    p.payments__title {
+        font-size: 18px;
+    }
+
+    section.wage {
+        width: 100%;
+        padding: 0 5px 5px 5px;
+    }
+    p.wage__title {
+        font-size: 24px;
+    }
+
+    p.wage__span {
+        font-size: 18px;
+    }
+    input.wage__input-num {
+        font-size: 14px;
+    }
+
+    button.wage__result {
+        font-size: 14px;
+        width: 100%;
+    }
+    footer.footer {
+        min-height: 30px;
+        width: 100%;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    .header {
+        height: 40px;
+        width: 100%;
+    }
+    img.header__logo {
+        width: 60px;
+    }
+    h1.header__title {
+        font-size: 14px;
+    }
+
+    #top {
+        flex-direction: column;
+        padding: 5px;
+    }
+    section.credits {
+        width: 100%;
+        height: 160px;
+    }
+    input.credits__input-num {
+        font-size: 18px;
+    }
+
+    section.calculation {
+        width: 100%;
+        height: 160px;
+    }
+
+    .calculation__number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button.calculation__result {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 3px;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    button.calculation__clear-btn {
+        width: 120px;
+        padding: 5px;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    p.calculation__summa {
+        font-size: 24px;
+    }
+
+    section.payments {
+        width: 100%;
+        height: 150px;
+    }
+
+    input.payments__input-num {
+        font-size: 12px;
+    }
+    p.payments__title {
+        font-size: 12px;
+    }
+
+    section.wage {
+        width: 100%;
+        padding: 0 5px 5px 5px;
+    }
+    p.wage__title {
+        font-size: 12px;
+    }
+
+    p.wage__span {
+        font-size: 12px;
+    }
+    input.wage__input-num {
+        font-size: 12px;
+    }
+
+    button.wage__result {
+        font-size: 14px;
+        width: 100%;
+    }
+    footer.footer {
+        min-height: 30px;
+        width: 100%;
+    }
+}
+/*==========  Mobile First  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+    /* */
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+    /* */
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    /* */
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+    /* */
+}

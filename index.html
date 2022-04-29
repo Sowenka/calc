@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>My money</title>
+        <link rel="stylesheet" href="scss/style.scss" />
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__logo" src="img/sowa_logo_finish.svg" alt="мой логотип" width="180" />
+            <h1 class="header__title">Калькулятор зарплаты</h1>
+        </header>
+        <div class="conteiner" id="top">
+            <section class="credits">
+                <div class="credits__tinkoff">
+                    <div class="credits__input-tinkoff">
+                        <input class="credits__input-num" type="number" name="bank-tinkoff" placeholder="14000" />
+                    </div>
+                    <img class="credits__logo-tinkoff" src="img/tinkoff_logo.svg" alt="логотип" width="50" />
+                </div>
+                <div class="credits__alfa">
+                    <div class="credits__input-alfa">
+                        <input class="credits__input-num" type="number" name="bank-alfa" placeholder="10000" />
+                    </div>
+                    <img class="credits__logo-alfa" src="img/alfa_logo.svg" alt="логотип" width="50" />
+                </div>
+                <div class="credits__rosbank">
+                    <div class="credits__input-rosbank">
+                        <input class="credits__input-num" type="number" name="bank-rosbank" placeholder="5000" />
+                    </div>
+                    <img class="credits__logo-rosbank" src="img/rosbank_logo.svg" alt="логотип" width="50" />
+                </div>
+            </section>
+
+            <section class="calculation">
+                <div class="calculation__number">
+                    <p class="calculation__summa">Сумма : <span class="result"></span></p>
+                    <button class="calculation__result">Посчитать</button>
+                    <button class="calculation__clear-btn">Очистить</button>
+                </div>
+            </section>
+
+            <section class="payments">
+                <div class="payments__flat">
+                    <div class="payments__input-flat">
+                        <input class="payments__input-num" type="number" name="flat" placeholder="14000" />
+                    </div>
+                    <p class="payments__title">Аренда квартиры</p>
+                </div>
+
+                <div class="payments__internet">
+                    <div class="payments__input-internet">
+                        <input class="payments__input-num" type="number" name="internet" placeholder="420" />
+                    </div>
+                    <p class="payments__title">Интернет</p>
+                </div>
+                <div class="payments__mobile">
+                    <div class="payments__input-mobile">
+                        <input class="payments__input-num" type="number" name="mobile" placeholder="340" />
+                    </div>
+                    <p class="payments__title">Мобильный телефон</p>
+                </div>
+                <div class="payments__petrol">
+                    <div class="payments__input-petrol">
+                        <input class="payments__input-num" type="number" name="petrol" placeholder="2000" />
+                    </div>
+                    <p class="payments__title">Бензин</p>
+                </div>
+            </section>
+        </div>
+        <section class="wage">
+            <div class="container">
+                <div class="wage__zarp">
+                    <p class="wage__title">Месячная зарплата</p>
+                    <input class="wage__input-num" type="number" name="zarp" placeholder="74577" />
+                </div>
+                <p class="wage__span wage__span-avans">Беру в аванс : <span class="result-avans"></span></p>
+                <p class="wage__span wage__span-zarp">Беру в зарплату : <span class="result-zarp"></span></p>
+                <button class="wage__result">Посчитать</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__title">
+                <p>© Copyrigth 2022</p>
+            </div>
+        </footer>
+
+        <script src="script/script.js"></script>
+    </body>
+</html>
